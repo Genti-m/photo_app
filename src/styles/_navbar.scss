@@ -1,0 +1,52 @@
+.navbar {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $white;
+  user-select: none;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    max-width: $desktop;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+  }
+
+  &__i {
+    height: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__logo,
+  &__item {
+    @extend .navbar__i;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__logo {
+    font-size: 3rem;
+    font-weight: bold;
+    @extend .text-blue;
+  }
+
+  &__lang {
+    @extend .navbar__i;
+    padding: 0;
+  }
+}

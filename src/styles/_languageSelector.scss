@@ -1,0 +1,31 @@
+.language-selector {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  
+  &__lang:hover {
+    color: white;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    right:50%;
+    background: $backgroundGray;
+    border-radius: 15px 0 15px 15px;
+  }
+
+  &__item {
+    padding: 1rem 2rem;
+
+    &:hover {
+      color: white;
+    }
+
+    &:not(:first-child) {
+      border-top: 1px solid $backgroundColor;
+    }
+  }
+}

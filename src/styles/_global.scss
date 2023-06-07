@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 $desktop: 1280px;
-$tablet: 680px;
-$mobile: 450px;
+$tablet: 768px;
+$mobile: 480px;
+
+//create media queries that style elements differently based on the screen size
 
 html {
   font-family: 'Poppins', sans-serif;

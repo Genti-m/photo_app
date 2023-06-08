@@ -26,6 +26,7 @@
   &__list {
     height: 100%;
     display: flex;
+    z-index: 2;
   }
 
   &__i {

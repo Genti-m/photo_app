@@ -3,7 +3,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fafafa;
-  color: #333;
+  background: $backgroundColor;
+  color: white;
   font-size: 4rem;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    max-width: $desktop;
+  }
+
+  &__right {
+    position: relative;
+    @extend .fade-from-right;
+
+    > img {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+    }
+  } 
+  
+
+  &__image-background {
+    width: 100%;
+    height: 100%;
+    @extend .blur-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    @extend .fade-from-left;
+    font-size: 7.2rem;
+
+    &-highlight {
+      @extend .text-blue;
+    }
+  }
 }

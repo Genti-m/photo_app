@@ -1,0 +1,35 @@
+@keyframes anim-left {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes anim-right {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.fade-from-left {
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  animation: anim-left 0.7s ease-in-out forwards; // name | duration | stile-di-animazione (veloce inizio e fine) | dove si deve fermare al 100%
+}
+
+.fade-from-right {
+  position: relative;
+  right: -100%;
+  opacity: 0;
+  animation: anim-right 0.7s ease-in-out forwards; // name | duration | stile-di-animazione (veloce inizio e fine) | dove si deve fermare al 100%
+}

@@ -25,7 +25,7 @@ const LanguageSelector = () => {
 
   return <div className="language-selector" onClick={toggleOpen}>
       <p className="language-selector__lang">{lang}</p>
-      {open && <div className="language-selector__dropdown">
+      {open && <div className="language-selector__dropdown" onMouseLeave={ () => setOpen(false)}>
         <p className="language-selector__item" onClick={ clickEn }>
           <FormattedMessage id="lang.en" />
         </p>

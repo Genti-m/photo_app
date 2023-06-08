@@ -34,3 +34,30 @@ $white: rgba(255,255,255,0.7);
   background: $blurColor;
   filter: blur(123px);
 }
+
+
+//GRADIENTS
+
+$blue__gradient: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+$pink__gradient: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+$white__gradient: rgba(255, 255, 255, 0.6);
+
+$blue__blur: blur(123px);
+$pink__blur: blur(900px);
+$white__blur: blur(750px);
+
+//GRADIENTS
+.blue__gradient {
+  background: $blue__gradient;
+  filter: $blue__blur;
+}
+
+.pink__gradient {
+  background: $pink__gradient;
+  filter: $pink__blur;
+}
+
+.white__gradient {
+  background: $white__gradient;
+  filter: $white__blur;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import FormattedMessage from "../components/FormattedMessage";
 import robot from "../../assets/png/robot.png";
 
 const Home = () => {
@@ -6,21 +7,25 @@ const Home = () => {
     <div className="home__content">
       <div className="home__left">
         <h1 className="home__title">
-          The Next<br />
+          <FormattedMessage id='home.title.firstRow' /><br />
           <span className="home__title-highlight">
-            Generation
+            <FormattedMessage id='home.title.secondHighlight' />
           </span>
-          <br />Payment Method.
+          <br />
+          <FormattedMessage id='home.title.thirdRow' />
         </h1>
         <p className="home__text">
-          Our team of experts uses a methodology <br className="home_text_br" />
-          to identify the credit cards most likely to fit your needs.
+          <FormattedMessage id='home.text.firstRow' /><br />
+          <FormattedMessage id='home.text.secondRow' />
         </p>
       </div>
 
       <div className="home__right">
-        <img src={robot} alt="billing" className="home__main-image" />
-        <div className="home__image-background" />
+        <img src={robot} alt="first_image" className="home__image" />
+        {/* <div className="home__image-background" /> */}
+        <div className="home__image-background-1" />
+        <div className="home__image-background-2" />
+        <div className="home__image-background-3" />
       </div>
     </div>
   </div>

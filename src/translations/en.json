@@ -6,5 +6,10 @@
   "navbar.gallery": "Gallery",
   "navbar.home": "Home",
   "navbar.products": "Products",
-  "title": "Title"
+  "title": "Title",
+  "home.title.firstRow": "The Next",
+  "home.title.secondHighlight": "Generation",
+  "home.title.thirdRow": "Payment Method.",
+  "home.text.firstRow": "aaaaaaaaaaaaa",
+  "home.text.secondRow": "vbbbbbbbbbbbbb"
 }

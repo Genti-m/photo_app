@@ -5,5 +5,8 @@
   "navbar.features": "Caratteristiche",
   "navbar.home": "Home",
   "navbar.products": "Prodotti",
-  "title": "Titolo"
+  "title": "Titolo",
+  "home.title.firstRow": "La Prossima",
+  "home.title.secondHighlight": "Generazione",
+  "home.title.thirdRow": "Di Pagamento."
 }

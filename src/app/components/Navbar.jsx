@@ -7,7 +7,7 @@ import { routesCodes } from "../../js/routeCodes";
 const Navbar = () => {
   return <div className="navbar">
     <div className="navbar__content">
-      <div className="navbar__logo"><Link to={ routesCodes.HOME }>Genti</Link></div>
+      <div className="navbar__logo"><Link to={ routesCodes.HOME }>Genti Musaj</Link></div>
       <div className="navbar__list">
         <div className="navbar__item"><Link to={ routesCodes.HOME }><FormattedMessage id='navbar.home' /></Link></div>
         <div className="navbar__item"><Link to={ routesCodes.GALLERY }><FormattedMessage id='navbar.gallery' /></Link></div>

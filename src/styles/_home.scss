@@ -6,6 +6,7 @@
   background: $backgroundColor;
   color: white;
   font-size: 4rem;
+  overflow-x: hidden;
 
   &__content {
     display: flex;

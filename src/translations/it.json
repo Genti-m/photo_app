@@ -1,5 +1,9 @@
 {
   "lang.en": "Inglese",
   "lang.it": "Italiano",
+  "navbar.clients": "Clienti",
+  "navbar.features": "Caratteristiche",
+  "navbar.home": "Home",
+  "navbar.products": "Prodotti",
   "title": "Titolo"
 }

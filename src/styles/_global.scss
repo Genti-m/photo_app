@@ -4,6 +4,14 @@ $desktop: 1280px;
 $tablet: 768px;
 $mobile: 480px;
 
+//NEW SCREEN sizes      ==> tailwind.config.js
+$xs: "480px";   //mobile
+$ss: "620px";   //
+$sm: "768px";   //tablet
+$md: "1060px";  //
+$lg: "1200px";  //desktop
+$xl: "1700px";  //
+
 //create media queries that style elements differently based on the screen size
 
 html {

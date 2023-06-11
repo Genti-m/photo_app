@@ -1,3 +1,4 @@
+
 .home {
   width: 100%;
   display: flex;
@@ -69,23 +70,48 @@
     height: 100%;
     position: relative;
     z-index: 5;
+  }
+    /*&-background-1 {
+    position: relative;
+    width: 40%;
+    height: 35%;
+    top: 0;
 
-    &-background-1{
-      @extend .pink__gradient;
-      //background-color: white;
+    &::before {
+      content: "";
       position: absolute;
-      z-index: 0;
-      width: 40%;
-      height: 35%;
-      top: 0;
-    }
+      top: -50%;
+      left: -50%;
+      right: -50%;
+      bottom: -50%;
+      background: $pink__gradient;
+      z-index: -1;
+    }*/
 
-    &-background-2{
 
+
+    /*&-background-2{
+      position: relative;
+      z-index: 1;
+      width: 80%;
+      height: 80%;
+      border-radius: 50%; // assuming "rounded-full" means a circle
+      bottom: 40px; // assuming "bottom-40" means 40px
+      
+      &::before{
+        content: "";
+        position: absolute;
+        top: -50%; 
+        left: -50%; 
+        right: -50%; 
+        bottom: -50%; 
+        @extend .white__gradient;
+        z-index: -1;
+        border-radius: 50%;
+      }  
     }
 
     &-background-3{
 
-    }
-  }
+    }*/
 }

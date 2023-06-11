@@ -24,12 +24,13 @@
   position: relative;
   left: -100%;
   opacity: 0;
-  animation: anim-left 0.7s ease-in-out forwards; // name | duration | stile-di-animazione (veloce inizio e fine) | dove si deve fermare al 100%
+  animation: anim-left 1s ease-in-out forwards; // name | duration | stile-di-animazione (veloce inizio e fine) | dove si deve fermare al 100%
 }
 
 .fade-from-right {
   position: relative;
   right: -100%;
   opacity: 0;
-  animation: anim-right 0.7s ease-in-out forwards; // name | duration | stile-di-animazione (veloce inizio e fine) | dove si deve fermare al 100%
+  animation: anim-right 1s ease-in-out forwards; // name | duration | stile-di-animazione (veloce inizio e fine) | dove si deve fermare al 100%
+  transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
 }

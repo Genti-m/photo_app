@@ -1,6 +1,15 @@
+//background and blur palette
 $backgroundColor: rgb(0, 4, 15);
 $backgroundGray: rgb(44, 47, 53);
 $blurColor: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+
+//Color Palette     ==> tailwind.config.js
+$primary: #00040f;
+$secondary: #00f6ff;
+$dimWhite: rgba(255, 255, 255, 0.7);
+$dimBlue: rgba(9, 151, 124, 0.1);
+
+//button gradient
 $buttonColor: linear-gradient(
   157.81deg,
   #def9fa -43.27%,
@@ -10,6 +19,8 @@ $buttonColor: linear-gradient(
   #5ce1e6 51.94%,
   #33bbcf 90.29%
 );
+
+//text gradient
 $textColor: radial-gradient(
   64.18% 64.18% at 71.16% 35.69%,
   #def9fa 0.89%,
@@ -20,6 +31,7 @@ $textColor: radial-gradient(
   #33bbcf 100%
 );
 
+//vedere color palette, poi cancellare
 $white: rgba(255,255,255,0.7);
 
 .text-blue {
@@ -40,24 +52,24 @@ $white: rgba(255,255,255,0.7);
 
 $blue__gradient: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
 $pink__gradient: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
-$white__gradient: rgba(255, 255, 255, 0.6);
+$white__gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%);
 
 $blue__blur: blur(123px);
 $pink__blur: blur(900px);
 $white__blur: blur(750px);
 
 //GRADIENTS
-.blue__gradient {
+/*@mixin blue__gradient {
   background: $blue__gradient;
   filter: $blue__blur;
 }
 
-.pink__gradient {
+@mixin pink__gradient {
   background: $pink__gradient;
   filter: $pink__blur;
 }
 
-.white__gradient {
+@mixin white__gradient {
   background: $white__gradient;
   filter: $white__blur;
-}
+}*/

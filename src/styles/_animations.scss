@@ -20,6 +20,17 @@
   }
 }
 
+@keyframes anim-bottom {
+  0% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
 .fade-from-left {
   position: relative;
   left: -100%;
@@ -33,4 +44,11 @@
   opacity: 0;
   animation: anim-right 1s ease-in-out forwards; // name | duration | stile-di-animazione (veloce inizio e fine) | dove si deve fermare al 100%
   transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+.fade-from-bottom {
+  position: relative;
+  bottom: -100%;
+  opacity: 0;
+  animation: anim-bottom 1s ease-in-out forwards;
 }

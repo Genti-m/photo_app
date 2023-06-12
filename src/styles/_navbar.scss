@@ -12,8 +12,8 @@
   -webkit-user-select: none; /* Chrome, Safari, Opera */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                      supported by Chrome and Opera */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+                      
 
   &__content {
     width: 100%;
@@ -45,7 +45,8 @@
     @extend .navbar__i;
 
     &:hover {
-      color: white;
+      //color: white;
+      @extend .text-blue;
     }
   }
 

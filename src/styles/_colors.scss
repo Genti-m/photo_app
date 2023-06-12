@@ -32,7 +32,7 @@ $textColor: radial-gradient(
 );
 
 //vedere color palette, poi cancellare
-$white: rgba(255,255,255,0.7);
+$white: rgba(255, 255, 255, 0.7);
 
 .text-blue {
   background: $textColor;
@@ -47,12 +47,19 @@ $white: rgba(255,255,255,0.7);
   filter: blur(123px);
 }
 
-
 //GRADIENTS
 
-$blue__gradient: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+$blue__gradient: linear-gradient(
+  180deg,
+  rgba(188, 165, 255, 0) 0%,
+  #214d76 100%
+);
 $pink__gradient: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
-$white__gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%);
+$white__gradient: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(255, 255, 255, 0.6) 100%
+);
 
 $blue__blur: blur(123px);
 $pink__blur: blur(900px);

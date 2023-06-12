@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import LanguageSelector from "./LanguageSelector";
 import FormattedMessage from "./FormattedMessage";
 import { Link } from 'react-router-dom';
 import { routesCodes } from "../../js/routeCodes";
+import menu from '../../assets/svg/menu.svg'
+import close from '../../assets/svg/close.svg'
+import { ReactSVG } from "react-svg";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
+
   return <div className="navbar">
     <div className="navbar__content">
       <div className="navbar__logo"><Link to={ routesCodes.HOME }>Genti Musaj</Link></div>
@@ -16,6 +24,8 @@ const Navbar = () => {
         <div className="navbar__item"><Link to="/"><FormattedMessage id='navbar.clients' /></Link></div>
         <div className="navbar__lang"><LanguageSelector /></div>
       </div>
+      <div className="navbar__item navbar__hamburger" onClick={toggleMobileMenu}><ReactSVG src={showMobileMenu ? close : menu} /></div>
+      <MobileMenu open={ showMobileMenu } />
     </div>
   </div>;
 };

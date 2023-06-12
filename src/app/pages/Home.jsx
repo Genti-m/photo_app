@@ -22,10 +22,10 @@ const Home = () => {
 
       <div className="home__right">
         <img src={robot} alt="first_image" className="home__image" />
-        {/* <div className="home__image-background" /> */}
-        <div className="home__image-background-1" />
-        <div className="home__image-background-2" />
-        <div className="home__image-background-3" />
+        <div className="home__image-background" />
+        {/* <div className="home__image-background-1" /> */}
+        {/* <div className="home__image-background-2" /> */}
+        {/* <div className="home__image-background-3" /> */}
       </div>
     </div>
   </div>

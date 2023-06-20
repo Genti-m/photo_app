@@ -31,6 +31,21 @@
   }
 }
 
+@keyframes anim-center {
+  0% {
+    scale: 0;
+    opacity: 0;
+  }
+  50% {
+    scale: 0.8;
+    opacity: 0.8;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
 .fade-from-left {
   position: relative;
   left: -100%;
@@ -51,4 +66,9 @@
   bottom: -100%;
   opacity: 0;
   animation: anim-bottom 1s ease-in-out forwards;
+}
+
+.fade-from-center {
+  opacity: 0;
+  animation: anim-center 300ms ease-in-out forwards;
 }

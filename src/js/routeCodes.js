@@ -1,4 +1,5 @@
 export const routesCodes = {
   HOME: "/",
-  GALLERY: "/gallery"
+  GALLERY: "/gallery",
+  ADMIN: "/admin"
 }

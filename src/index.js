@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Gallery from './app/pages/Gallery';
 import { routesCodes } from './js/routeCodes';
 import Error from './app/pages/Error';
+import Admin from './app/pages/Admin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Provider store={ store }>
@@ -17,6 +18,7 @@ root.render(<Provider store={ store }>
       <Routes>
         <Route path={ routesCodes.GALLERY } element={ <Gallery /> } />
         <Route path={ routesCodes.HOME } element={ <Home /> } />
+        <Route path={ routesCodes.ADMIN } element={ <Admin /> } />
         <Route path="*" element={ <Error /> } />
       </Routes>
     </Router>    

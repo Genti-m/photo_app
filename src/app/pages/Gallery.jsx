@@ -16,12 +16,16 @@ const Gallery = () => {
   const [opacity, setOpacity] = useState(1);
   const [top, setTop] = useState(0);
 
-  const closeImage = () => {
-    setDetailImage(null);
+  const resetImage = () => {
     setStartY(null);
     setY(null);
     setOpacity(1);
     setTop(0);
+  }
+
+  const closeImage = () => {
+    setDetailImage(null);
+    resetImage()
   };
 
   const keydown = (e) => {
@@ -48,12 +52,19 @@ const Gallery = () => {
 
   useEffect(() => {
     if (y) {
-      const diff = startY - y;
-      console.log(diff);
-      setTop(diff * 2);
-      setOpacity(1 - diff / 20);
+      const diff = y - startY;
+      if (diff > 0) {
+        setTop(diff);
+        setOpacity((window.innerHeight / 8) / diff)
+      }
     }
   }, [y]);
+
+  useEffect(() => {
+    if (opacity < 0.3) {
+      closeImage();
+    }
+  }, [opacity]);
 
   return (
     <div className="gallery">
@@ -95,8 +106,11 @@ const Gallery = () => {
       {detailImage && (
         <div
         className="gallery__photo-detail" onClick={closeImage} 
-              onTouchStart={(e) => setStartY(e.touches[0].clientX)}
-              onTouchMove={(e) => setY(e.touches[0].clientX)}
+              onTouchStart={(e) => {
+                setStartY(e.touches[0].screenY)
+              }}
+              onTouchMove={(e) => setY(e.touches[0].screenY)}
+              onTouchEnd={ () => detailImage ? resetImage() : {} }
               >
           <div className="gallery__photo-detail-close">
             <ReactSVG src={close} />

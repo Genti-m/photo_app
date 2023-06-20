@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import blog01 from '../../assets/gallery/blog01.png';
 import blog02 from '../../assets/gallery/blog02.png';
@@ -40,31 +41,33 @@ const Gallery = () => {
       document.removeEventListener('keydown', keydown);
       unlockScroll();
     };
-  }, []);
+  }, [keydown]);
 
   useEffect(() => {
     if (detailImage) {
       lockScroll();
+      // window.screen.orientation.lock("portrait");
+      // window.screen.requestFullscreen()
     } else {
       unlockScroll();
     }
   }, [detailImage]);
 
   useEffect(() => {
-    if (y) {
+    if (y && startY) {
       const diff = y - startY;
       if (diff > 0) {
         setTop(diff);
         setOpacity((window.innerHeight / 8) / diff)
       }
     }
-  }, [y]);
+  }, [y, startY]);
 
   useEffect(() => {
     if (opacity < 0.3) {
       closeImage();
     }
-  }, [opacity]);
+  }, [opacity, closeImage]);
 
   return (
     <div className="gallery">

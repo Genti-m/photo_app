@@ -6,6 +6,7 @@ import FormattedMessage from "./FormattedMessage";
 import LanguageSelector from "./LanguageSelector";
 
 const MobileMenu = ({ open }) => {
+
   return <div className={`mobile-menu ${open ? 'open' : 'closed'}`}>
     <div className="mobile-menu__item"><Link to={ routesCodes.HOME }><FormattedMessage id='navbar.home' /></Link></div>
     <div className="mobile-menu__item"><Link to={ routesCodes.GALLERY }><FormattedMessage id='navbar.gallery' /></Link></div>
